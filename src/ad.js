@@ -29,7 +29,9 @@ export default class Ad {
 
   }
   runAd(){
+    console.log('running');
     fetchAd(this.container)
+
     setInterval(() => fetchAd(this.container), this.updateInterval);
   };
 }
