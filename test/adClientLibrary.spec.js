@@ -15,7 +15,7 @@ describe('Given an instance of my library',  () => {
   });
   describe('when I need the containerId and updateInterval', () => {
     it('should return the containerId and updateInterval', () => {
-      expect(ad.runAd()).to.be.equal('adOne');
+      expect(ad.runAd().containerId).to.be.equal('adOne');
       //expect(ad.updateInterval).to.be.equal('60');
 
     });
